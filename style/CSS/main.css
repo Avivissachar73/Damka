@@ -1,0 +1,42 @@
+/* BASE */
+@import './base.css';
+@import './helpers.css';
+@import './layout.css';
+
+
+/* CMPS */
+
+/* @import '../../alert/alert.css'; */
+
+/* @import './cmps/Damka.cmp.css'; */
+
+@import './cmps/board.css';
+@import './cmps/game-info.css';
+
+
+
+
+
+
+.app-header, .app-footer {
+    min-height: 10vh;
+    background-color: rgb(159, 177, 192);
+}
+
+.main-content {
+    min-height: 90vh;
+}
+
+.damka-container {
+    margin: 5px auto;
+    width: 50vw;
+    /* border: 1px solid black; */
+    padding: 5px;
+}
+
+@media (max-width: 500px) {
+    
+    .damka-container {
+        width: 90vw;
+    }
+}

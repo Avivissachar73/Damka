@@ -1,0 +1,111 @@
+
+.alert-screen {
+    /* position: absolute; */
+    top: 0;
+    right: 0;
+    /* height: 100%; */
+    /* width: 100%; */
+    background-color: rgba(0, 0, 0, 0.05);
+    z-index: 29;
+}
+.alert-absolute .alert-creen {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.alert-fixed .alert-screen {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+}
+
+.alert-modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: 1px solid rgb(165, 12, 12);
+    border-radius: 20px;
+    /* width: 75%; */
+    /* width: 300px; */
+    /* min-height: 200px; */
+    padding: 20px;
+    /* position: absolute; */
+    z-index: 30 !important;
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%, 50%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.alert-absolute .alert-modal {
+    position: absolute;
+    width: 75%;
+}
+.alert-fixed .alert-modal {
+    position: fixed;
+    width: 300px;
+    min-height: 200px;
+}
+
+
+.alert-modal > * {
+    text-align: center;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.alert-modal .buttons-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.alert-modal button {
+    background: unset;
+    font-size: 1rem;
+    border: 1px solid rgb(165, 12, 12);
+    border-radius: 7.5px;
+    margin: 5px;
+    outline: unset;
+    transition: 0.3s;
+    color: rgb(165, 12, 12);
+}
+.alert-modal button:hover {
+    cursor: pointer;
+    border: 1px solid rgb(192, 76, 76);
+    color: rgb(192, 76, 76);
+}
+
+/* 
+.notification-popup {
+    color: white !important;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-right: 30px;
+    width: 300px;
+    min-height: 70px;
+    background-color: black;
+    z-index: 30 !important;
+}
+
+.close-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+} */
+
+@media (max-width: 400px) {
+    .alert-fixed .alert-modal {
+        width: 80vw;
+    }
+    /* .notification-popup {
+        width: 100%;
+    } */
+}

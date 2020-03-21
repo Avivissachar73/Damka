@@ -1,0 +1,61 @@
+html {
+    font-family: sans-serif;
+}
+
+.damka-section * {
+    box-sizing: border-box;
+}
+
+.damka-section {
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+.damka-section button {
+    border: unset;
+    background: unset;
+    padding: none;
+    outline: none;
+    border: 1px solid black;
+    color: black;
+    background-color: #fff;
+    border-radius: 5px;
+} .damka-section button:hover {cursor: pointer;}
+.damka-section button:active {
+    color: white;
+    background-color: black;
+    border-color: white;
+}
+
+.damka-section input, .damka-section textarea {
+    width: 200px;
+    outline: none;
+}
+
+input, select {
+    padding: 5px;
+    padding-left: none;
+    border: unset;
+    background: unset;
+    border-bottom: 1px solid black;
+}
+
+textarea {
+    height: 75px
+}
+
+a, .router-link {
+    text-decoration: none !important;
+    color: unset;
+}
+
+
+
+/* box-shadow: 0px 0px 10px 5px rgb(237, 241, 177); */
